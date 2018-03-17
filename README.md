@@ -42,18 +42,33 @@ RESPON FORMAT: JSON
 
 #### Request URL
 
-UAT: https://a2u.dev.paravers.com/index.php?action=backBinding&requestbody=requestbody 
+UAT: https://a2u.dev.paravers.com/index.php?action=backBinding&reqbody=reqbody 
 LIVE: https://association.asen2u.com/index.php?action=backBinding 
 
 #### Url parameter
+
 |No	|Parameter	|Description	|Length	| Example|
 | - |:---------:| -----------:|------:|------:|
 |1	|appid			 |-----------|------|------|
-|2	|requestbody				|-----------|------|------|
-|3	|requesthash				|-----------|------|------|
+|2	|reqbody				|-----------|------|------|
+|3	|reqhash				|-----------|------|------|
 |4	|timestamp				|-----------|------|------|
 					
+#### Request body:
 
+|Parameter	|Description	|Length	| Example|
+| --------- |:-----------:|------:|------:|
+|	*email    | mi@gmail.com| 96     | - |
+|	*phone	  | Mobile number with country code, phone and country code are split by “-”|	32     |	60-1232432321|
+|	*firstname|       -      | 32 |- |	
+|	*lastname|       -      | 32 |-|	
+|	nickname|       -      | 32 | -|	
+|	gender	|0:unknow, 1: man, 2:woman|-|-|		
+|	birthday|	Date: 1988-05-32 or  year: 1988	|-|	1988-05-30|
+|	address	|	-	|-|-|
+|	avartaimg|	User image url|256|		http://myimg.com/123423|
+|	category|	Path format	|128|	/student/college|
+|	tag|	Seperate by ","|-|-|		
 
 ### Respond
 ### Example
